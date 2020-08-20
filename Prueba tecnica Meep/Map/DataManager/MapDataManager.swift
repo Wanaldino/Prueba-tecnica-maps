@@ -11,19 +11,15 @@ import Foundation
 class MapDataManager {
     
     init() {}
-    
-    func getData() {
-        
-    }
 }
 
 extension MapDataManager: MapDataManagerProtocol {
     func getMarkers(for request: MarkersRequestModel, completion: @escaping (Result<[MapMarker], Error>) -> Void) {
         
-        let fileURL = Bundle.main.url(forResource: "mock", withExtension: "json")!
-        let data = try! Data(contentsOf: fileURL)
-        let results = try! JSONDecoder().decode([MapMarker].self, from: data)
-        return completion(.success(results))
+//        let fileURL = Bundle.main.url(forResource: "mock", withExtension: "json")!
+//        let data = try! Data(contentsOf: fileURL)
+//        let results = try! JSONDecoder().decode([MapMarker].self, from: data)
+//        return completion(.success(results))
         
         let urlString = String(format: "https://apidev.meep.me/tripplan/api/v1/routers/%@/resources", request.city)
         var urlComponents = URLComponents(string: urlString)
