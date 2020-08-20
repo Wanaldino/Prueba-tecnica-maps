@@ -24,9 +24,10 @@ extension MapDataManager: MapDataManagerProtocol {
         let urlString = String(format: "https://apidev.meep.me/tripplan/api/v1/routers/%@/resources", request.city)
         var urlComponents = URLComponents(string: urlString)
         
-        urlComponents?.queryItems = []
-        urlComponents?.queryItems?.append(.init(name: "lowerLeftLatLon", value: request.lowerLeftLatLon))
-        urlComponents?.queryItems?.append(.init(name: "upperRightLatLon", value: request.upperRightLatLon))
+        urlComponents?.queryItems = [
+            .init(name: "lowerLeftLatLon", value: request.lowerLeftLatLon),
+            .init(name: "upperRightLatLon", value: request.upperRightLatLon)
+        ]
         
         var urlRequest = URLRequest(url: urlComponents!.url!)
         urlRequest.addValue("application/json", forHTTPHeaderField: "accept")
