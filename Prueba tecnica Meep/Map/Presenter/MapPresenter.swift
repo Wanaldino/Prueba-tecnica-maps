@@ -19,7 +19,11 @@ class MapPresenter: NSObject {
     }
     
     func transformMarkers(_ markers: [MapMarker]) -> [GMSMarker] {
-        markers.compactMap { (marker) -> GMSMarker? in
+        let blueImage = GMSMarker.markerImage(with: .blue)
+        let greenImage = GMSMarker.markerImage(with: .green)
+        let yellowImage = GMSMarker.markerImage(with: .yellow)
+        
+        return markers.compactMap { (marker) -> GMSMarker? in
             let position = CLLocationCoordinate2D(
                 latitude: marker.y,
                 longitude: marker.x
@@ -29,17 +33,17 @@ class MapPresenter: NSObject {
             switch marker.markerType {
             case .location:
                 gmsMarker.title = marker.name
-                gmsMarker.icon = GMSMarker.markerImage(with: .blue)
+                gmsMarker.icon = blueImage
                 return gmsMarker
             case .bikeStation(let data):
                 gmsMarker.title = "Bike Station \(marker.name)"
                 gmsMarker.snippet = "Available bikes: \(data.bikesAvailable)"
-                gmsMarker.icon = GMSMarker.markerImage(with: .green)
+                gmsMarker.icon = greenImage
                 return gmsMarker
             case .motorbike(let data):
                 gmsMarker.title = "Motorbike \(data.model)"
                 gmsMarker.snippet = "Helmets: \(data.helmets)"
-                gmsMarker.icon = GMSMarker.markerImage(with: .yellow)
+                gmsMarker.icon = yellowImage
                 return gmsMarker
             case .unknown:
                 return nil
@@ -68,10 +72,6 @@ extension MapPresenter: GMSMapViewDelegate {
                 marker.map = mapView
             }
         }
-    }
-    
-    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        print("")
     }
 }
 

@@ -10,5 +10,5 @@ import Foundation
 import GoogleMaps
 
 struct MapViewModel {
-    var mapDelegate: GMSMapViewDelegate
+    weak var mapDelegate: GMSMapViewDelegate?
 }
