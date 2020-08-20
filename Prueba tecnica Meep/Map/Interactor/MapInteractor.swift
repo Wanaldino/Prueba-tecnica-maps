@@ -38,8 +38,8 @@ class MapInteractor {
 
 extension MapInteractor: MapInteractorProtocol {
     func getMarkers(southWestLatLon: CLLocationCoordinate2D, northEastLatLon: CLLocationCoordinate2D, completion: @escaping ([MapMarker]) -> Void) {
-        let southWestLatLon = String(format: "%@,%@", southWestLatLon.latitude, southWestLatLon.longitude)
-        let northEastLatLon = String(format: "%@,%@", northEastLatLon.latitude, northEastLatLon.longitude)
+        let southWestLatLon = String("\(southWestLatLon.latitude),\(southWestLatLon.longitude)")
+        let northEastLatLon = String("\(northEastLatLon.latitude),\(northEastLatLon.longitude)")
         
         let model = MarkersRequestModel(
             city: "lisboa",
