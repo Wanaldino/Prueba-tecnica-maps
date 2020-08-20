@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E046ADD332FB3FB65B140EF /* Pods_Prueba_tecnica_Meep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B2C0311A19FAD72BDCC724 /* Pods_Prueba_tecnica_Meep.framework */; };
 		F08B03E624E9B9C7007C08A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B03E524E9B9C7007C08A1 /* AppDelegate.swift */; };
 		F08B03E824E9B9C7007C08A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B03E724E9B9C7007C08A1 /* SceneDelegate.swift */; };
-		F08B03EA24E9B9C7007C08A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B03E924E9B9C7007C08A1 /* ViewController.swift */; };
-		F08B03ED24E9B9C7007C08A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F08B03EB24E9B9C7007C08A1 /* Main.storyboard */; };
 		F08B03EF24E9B9C8007C08A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08B03EE24E9B9C8007C08A1 /* Assets.xcassets */; };
 		F08B03F224E9B9C8007C08A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F08B03F024E9B9C8007C08A1 /* LaunchScreen.storyboard */; };
+		F08B03FE24E9D070007C08A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B03FD24E9D070007C08A1 /* MapViewController.swift */; };
+		F08B040124E9D0CB007C08A1 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040024E9D0CB007C08A1 /* MapPresenter.swift */; };
+		F08B040324E9D0DF007C08A1 /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040224E9D0DF007C08A1 /* MapBuilder.swift */; };
+		F08B040524E9D0F5007C08A1 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040424E9D0F5007C08A1 /* MapInteractor.swift */; };
+		F08B040724E9D106007C08A1 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040624E9D106007C08A1 /* MapDataManager.swift */; };
+		F08B040924E9D4C5007C08A1 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040824E9D4C5007C08A1 /* MapMarker.swift */; };
+		F08B040B24E9DB23007C08A1 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = F08B040A24E9DB23007C08A1 /* mock.json */; };
+		F08B040D24EAC824007C08A1 /* UIView+fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B040C24EAC824007C08A1 /* UIView+fill.swift */; };
+		F08B041824EAE147007C08A1 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041724EAE147007C08A1 /* Builder.swift */; };
+		F08B041A24EAE160007C08A1 /* MapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041924EAE160007C08A1 /* MapViewProtocol.swift */; };
+		F08B041C24EAE171007C08A1 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041B24EAE171007C08A1 /* MapViewModel.swift */; };
+		F08B041E24EAE1B1007C08A1 /* MapPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041D24EAE1B1007C08A1 /* MapPresenterProtocol.swift */; };
+		F08B042024EAE1CE007C08A1 /* MapInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041F24EAE1CE007C08A1 /* MapInteractorProtocol.swift */; };
+		F08B042224EAE1EF007C08A1 /* MapDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042124EAE1EF007C08A1 /* MapDataManagerProtocol.swift */; };
+		F08B042424EAE38A007C08A1 /* MarkersRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042324EAE38A007C08A1 /* MarkersRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36C3EDA9893E11C983EAC9C2 /* Pods-Prueba tecnica Meep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba tecnica Meep.release.xcconfig"; path = "Target Support Files/Pods-Prueba tecnica Meep/Pods-Prueba tecnica Meep.release.xcconfig"; sourceTree = "<group>"; };
+		A88DED646449536016027E0A /* Pods-Prueba tecnica Meep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba tecnica Meep.debug.xcconfig"; path = "Target Support Files/Pods-Prueba tecnica Meep/Pods-Prueba tecnica Meep.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B2C0311A19FAD72BDCC724 /* Pods_Prueba_tecnica_Meep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_tecnica_Meep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08B03E224E9B9C7007C08A1 /* Prueba tecnica Meep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba tecnica Meep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08B03E524E9B9C7007C08A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F08B03E724E9B9C7007C08A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F08B03E924E9B9C7007C08A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F08B03EC24E9B9C7007C08A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F08B03EE24E9B9C8007C08A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08B03F124E9B9C8007C08A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F08B03F324E9B9C8007C08A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08B03FD24E9D070007C08A1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F08B040024E9D0CB007C08A1 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		F08B040224E9D0DF007C08A1 /* MapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
+		F08B040424E9D0F5007C08A1 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		F08B040624E9D106007C08A1 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
+		F08B040824E9D4C5007C08A1 /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		F08B040A24E9DB23007C08A1 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		F08B040C24EAC824007C08A1 /* UIView+fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fill.swift"; sourceTree = "<group>"; };
+		F08B041724EAE147007C08A1 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		F08B041924EAE160007C08A1 /* MapViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewProtocol.swift; sourceTree = "<group>"; };
+		F08B041B24EAE171007C08A1 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F08B041D24EAE1B1007C08A1 /* MapPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenterProtocol.swift; sourceTree = "<group>"; };
+		F08B041F24EAE1CE007C08A1 /* MapInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractorProtocol.swift; sourceTree = "<group>"; };
+		F08B042124EAE1EF007C08A1 /* MapDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManagerProtocol.swift; sourceTree = "<group>"; };
+		F08B042324EAE38A007C08A1 /* MarkersRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E046ADD332FB3FB65B140EF /* Pods_Prueba_tecnica_Meep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7BD78780C386ED22A8052DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2C0311A19FAD72BDCC724 /* Pods_Prueba_tecnica_Meep.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F08B03D924E9B9C7007C08A1 = {
 			isa = PBXGroup;
 			children = (
 				F08B03E424E9B9C7007C08A1 /* Prueba tecnica Meep */,
 				F08B03E324E9B9C7007C08A1 /* Products */,
+				F9DCCA6C518B22E6049EE7EE /* Pods */,
+				E7BD78780C386ED22A8052DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +97,109 @@
 		F08B03E424E9B9C7007C08A1 /* Prueba tecnica Meep */ = {
 			isa = PBXGroup;
 			children = (
+				F08B041624EAE13F007C08A1 /* Common */,
+				F08B040E24EAC829007C08A1 /* Extensions */,
+				F08B040A24E9DB23007C08A1 /* mock.json */,
+				F08B03FC24E9D051007C08A1 /* Map */,
 				F08B03E524E9B9C7007C08A1 /* AppDelegate.swift */,
 				F08B03E724E9B9C7007C08A1 /* SceneDelegate.swift */,
-				F08B03E924E9B9C7007C08A1 /* ViewController.swift */,
-				F08B03EB24E9B9C7007C08A1 /* Main.storyboard */,
 				F08B03EE24E9B9C8007C08A1 /* Assets.xcassets */,
 				F08B03F024E9B9C8007C08A1 /* LaunchScreen.storyboard */,
 				F08B03F324E9B9C8007C08A1 /* Info.plist */,
 			);
 			path = "Prueba tecnica Meep";
+			sourceTree = "<group>";
+		};
+		F08B03FC24E9D051007C08A1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F08B041424EAE125007C08A1 /* Entity */,
+				F08B041324EADF7F007C08A1 /* DataManager */,
+				F08B041224EADF7A007C08A1 /* Interactor */,
+				F08B041124EADF76007C08A1 /* Presenter */,
+				F08B041024EADF71007C08A1 /* View */,
+				F08B040F24EADF6C007C08A1 /* Builder */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F08B040E24EAC829007C08A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040C24EAC824007C08A1 /* UIView+fill.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F08B040F24EADF6C007C08A1 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040224E9D0DF007C08A1 /* MapBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		F08B041024EADF71007C08A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F08B03FD24E9D070007C08A1 /* MapViewController.swift */,
+				F08B041924EAE160007C08A1 /* MapViewProtocol.swift */,
+				F08B041B24EAE171007C08A1 /* MapViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F08B041124EADF76007C08A1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040024E9D0CB007C08A1 /* MapPresenter.swift */,
+				F08B041D24EAE1B1007C08A1 /* MapPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F08B041224EADF7A007C08A1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040424E9D0F5007C08A1 /* MapInteractor.swift */,
+				F08B041F24EAE1CE007C08A1 /* MapInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F08B041324EADF7F007C08A1 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040624E9D106007C08A1 /* MapDataManager.swift */,
+				F08B042124EAE1EF007C08A1 /* MapDataManagerProtocol.swift */,
+				F08B042324EAE38A007C08A1 /* MarkersRequestModel.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F08B041424EAE125007C08A1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F08B040824E9D4C5007C08A1 /* MapMarker.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F08B041624EAE13F007C08A1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F08B041724EAE147007C08A1 /* Builder.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F9DCCA6C518B22E6049EE7EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A88DED646449536016027E0A /* Pods-Prueba tecnica Meep.debug.xcconfig */,
+				36C3EDA9893E11C983EAC9C2 /* Pods-Prueba tecnica Meep.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F08B03F624E9B9C8007C08A1 /* Build configuration list for PBXNativeTarget "Prueba tecnica Meep" */;
 			buildPhases = (
+				A0D374852CCD98CFDC841371 /* [CP] Check Pods Manifest.lock */,
 				F08B03DE24E9B9C7007C08A1 /* Sources */,
 				F08B03DF24E9B9C7007C08A1 /* Frameworks */,
 				F08B03E024E9B9C7007C08A1 /* Resources */,
+				42B29FBB55630E25028A03EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,34 +264,81 @@
 			files = (
 				F08B03F224E9B9C8007C08A1 /* LaunchScreen.storyboard in Resources */,
 				F08B03EF24E9B9C8007C08A1 /* Assets.xcassets in Resources */,
-				F08B03ED24E9B9C7007C08A1 /* Main.storyboard in Resources */,
+				F08B040B24E9DB23007C08A1 /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42B29FBB55630E25028A03EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba tecnica Meep/Pods-Prueba tecnica Meep-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba tecnica Meep/Pods-Prueba tecnica Meep-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prueba tecnica Meep/Pods-Prueba tecnica Meep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D374852CCD98CFDC841371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prueba tecnica Meep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F08B03DE24E9B9C7007C08A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08B03EA24E9B9C7007C08A1 /* ViewController.swift in Sources */,
+				F08B040324E9D0DF007C08A1 /* MapBuilder.swift in Sources */,
+				F08B040D24EAC824007C08A1 /* UIView+fill.swift in Sources */,
+				F08B040724E9D106007C08A1 /* MapDataManager.swift in Sources */,
+				F08B042424EAE38A007C08A1 /* MarkersRequestModel.swift in Sources */,
 				F08B03E624E9B9C7007C08A1 /* AppDelegate.swift in Sources */,
+				F08B040124E9D0CB007C08A1 /* MapPresenter.swift in Sources */,
+				F08B042024EAE1CE007C08A1 /* MapInteractorProtocol.swift in Sources */,
+				F08B040924E9D4C5007C08A1 /* MapMarker.swift in Sources */,
 				F08B03E824E9B9C7007C08A1 /* SceneDelegate.swift in Sources */,
+				F08B042224EAE1EF007C08A1 /* MapDataManagerProtocol.swift in Sources */,
+				F08B040524E9D0F5007C08A1 /* MapInteractor.swift in Sources */,
+				F08B041A24EAE160007C08A1 /* MapViewProtocol.swift in Sources */,
+				F08B03FE24E9D070007C08A1 /* MapViewController.swift in Sources */,
+				F08B041824EAE147007C08A1 /* Builder.swift in Sources */,
+				F08B041C24EAE171007C08A1 /* MapViewModel.swift in Sources */,
+				F08B041E24EAE1B1007C08A1 /* MapPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F08B03EB24E9B9C7007C08A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F08B03EC24E9B9C7007C08A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F08B03F024E9B9C8007C08A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +466,7 @@
 		};
 		F08B03F724E9B9C8007C08A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88DED646449536016027E0A /* Pods-Prueba tecnica Meep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +484,7 @@
 		};
 		F08B03F824E9B9C8007C08A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C3EDA9893E11C983EAC9C2 /* Pods-Prueba tecnica Meep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
