@@ -34,14 +34,18 @@ extension MapDataManager: MapDataManagerProtocol {
         var urlRequest = URLRequest(url: urlComponents!.url!)
         urlRequest.addValue("application/json", forHTTPHeaderField: "accept")
         
-        URLSession(configuration: .default).dataTask(with: urlRequest) { (data, response, error) in
+        let task = URLSession(configuration: .default).dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
             } else if let data = data, let results = try? JSONDecoder().decode([MapMarker].self, from: data) {
-                completion(.success(results))
+                DispatchQueue.main.async {
+                    completion(.success(results))
+                }
             } else {
                 fatalError()
             }
         }
+        
+        task.resume()
     }
 }

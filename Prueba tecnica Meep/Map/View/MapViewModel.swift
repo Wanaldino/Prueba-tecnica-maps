@@ -11,5 +11,4 @@ import GoogleMaps
 
 struct MapViewModel {
     var mapDelegate: GMSMapViewDelegate
-    var markers: [GMSMarker]
 }

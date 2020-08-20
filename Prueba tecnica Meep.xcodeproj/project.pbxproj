@@ -27,6 +27,8 @@
 		F08B042024EAE1CE007C08A1 /* MapInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B041F24EAE1CE007C08A1 /* MapInteractorProtocol.swift */; };
 		F08B042224EAE1EF007C08A1 /* MapDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042124EAE1EF007C08A1 /* MapDataManagerProtocol.swift */; };
 		F08B042424EAE38A007C08A1 /* MarkersRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042324EAE38A007C08A1 /* MarkersRequestModel.swift */; };
+		F08B042824EEA367007C08A1 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042724EEA367007C08A1 /* Icon.swift */; };
+		F08B042A24EED4F8007C08A1 /* MapMarkerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B042924EED4F8007C08A1 /* MapMarkerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		F08B041F24EAE1CE007C08A1 /* MapInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractorProtocol.swift; sourceTree = "<group>"; };
 		F08B042124EAE1EF007C08A1 /* MapDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManagerProtocol.swift; sourceTree = "<group>"; };
 		F08B042324EAE38A007C08A1 /* MarkersRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersRequestModel.swift; sourceTree = "<group>"; };
+		F08B042724EEA367007C08A1 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		F08B042924EED4F8007C08A1 /* MapMarkerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				F08B03FD24E9D070007C08A1 /* MapViewController.swift */,
 				F08B041924EAE160007C08A1 /* MapViewProtocol.swift */,
 				F08B041B24EAE171007C08A1 /* MapViewModel.swift */,
+				F08B042924EED4F8007C08A1 /* MapMarkerDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F08B041724EAE147007C08A1 /* Builder.swift */,
+				F08B042724EEA367007C08A1 /* Icon.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08B040324E9D0DF007C08A1 /* MapBuilder.swift in Sources */,
+				F08B042824EEA367007C08A1 /* Icon.swift in Sources */,
 				F08B040D24EAC824007C08A1 /* UIView+fill.swift in Sources */,
 				F08B040724E9D106007C08A1 /* MapDataManager.swift in Sources */,
 				F08B042424EAE38A007C08A1 /* MarkersRequestModel.swift in Sources */,
@@ -326,6 +333,7 @@
 				F08B042024EAE1CE007C08A1 /* MapInteractorProtocol.swift in Sources */,
 				F08B040924E9D4C5007C08A1 /* MapMarker.swift in Sources */,
 				F08B03E824E9B9C7007C08A1 /* SceneDelegate.swift in Sources */,
+				F08B042A24EED4F8007C08A1 /* MapMarkerDetailView.swift in Sources */,
 				F08B042224EAE1EF007C08A1 /* MapDataManagerProtocol.swift in Sources */,
 				F08B040524E9D0F5007C08A1 /* MapInteractor.swift in Sources */,
 				F08B041A24EAE160007C08A1 /* MapViewProtocol.swift in Sources */,

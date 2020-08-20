@@ -15,6 +15,25 @@ class MapInteractor {
     init(dataManager: MapDataManagerProtocol) {
         self.dataManager = dataManager
     }
+    
+    func clearAndSaveMarkers(_ markers: [MapMarker]) -> [MapMarker] {
+        var savedMarkersID = self.markers.compactMap({ $0.id })
+        
+        let clearedMarkers = markers.reduce([MapMarker]()) { (result, marker) -> [MapMarker] in
+            if savedMarkersID.contains(marker.id) {
+                return result
+            } else {
+                var newResult = result
+                newResult.append(marker)
+                savedMarkersID.append(marker.id)
+                return newResult
+            }
+        }
+        
+        self.markers.append(contentsOf: clearedMarkers)
+        
+        return clearedMarkers
+    }
 }
 
 extension MapInteractor: MapInteractorProtocol {
@@ -30,12 +49,8 @@ extension MapInteractor: MapInteractorProtocol {
         dataManager.getMarkers(for: model) { (result) in
             switch result {
             case .success(let markers):
-                markers.forEach { (marker) in
-                    if !self.markers.contains(where: { $0.id == marker.id }) {
-                        self.markers.append(marker)
-                    }
-                }
-                completion(self.markers)
+                let clearedMarkers = self.clearAndSaveMarkers(markers)
+                completion(clearedMarkers)
             case .failure:
                 break
             }

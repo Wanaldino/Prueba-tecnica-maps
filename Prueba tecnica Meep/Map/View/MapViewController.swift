@@ -17,6 +17,9 @@ class MapViewController: UIViewController {
     lazy var map: GMSMapView = {
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 15.0)
         let map = GMSMapView.map(withFrame: self.view.frame, camera: camera)
+        map.isMyLocationEnabled = true
+        map.settings.myLocationButton = true
+        map.settings.compassButton = true
         map.delegate = model.mapDelegate
         return map
     }()
@@ -42,10 +45,5 @@ class MapViewController: UIViewController {
 extension MapViewController: MapViewProtocol {
     func update() {
         model = presenter.model
-        
-        map.clear()
-        model.markers.forEach { (marker) in
-            marker.map = map
-        }
     }
 }
