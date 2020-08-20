@@ -7,7 +7,7 @@
 *.mode2v3
 *.perspectivev3
 *.xcuserstate
-project.xcworkspace/
+*.xcworkspace/
 xcuserdata/
 
 # Package files
@@ -26,3 +26,7 @@ dist/
 # Backup files
 *~.nib
 
+
+#External dependencies
+Pods/
+*.lock
