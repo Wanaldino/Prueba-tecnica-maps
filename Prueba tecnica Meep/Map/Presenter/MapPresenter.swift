@@ -74,4 +74,3 @@ extension MapPresenter: GMSMapViewDelegate {
         }
     }
 }
-
